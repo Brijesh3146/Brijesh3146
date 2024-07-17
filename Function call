@@ -1,0 +1,33 @@
+#CODE1
+def add(a,b):
+return (a+b)
+def sub(a,b):
+return (a-b)
+def mul(a,b):
+return (a*b)
+def div(a,b):
+return (a/b)
+c=int(input('''enter 1:add ,2:sub ,3:mul ,4:div'''))
+n1=int(input ("enter no.1"))
+n2=int(input ("enter no.2"))
+if c==1:
+print(add(n1,n2))
+elif c==2:
+print(sub(n1,n2))
+elif c==3:
+print(mul(n1,n2))
+elif c==4:
+print(div(n1,n2))
+else:
+ Print("error")
+#CODE 2
+def add(a,b):
+  return(a+b)
+def sub(a,b):
+  return(a-b)
+def mul(a,b):
+  return(a*b)
+x,y,z,m=10,20,30,40
+print(add(x,add(y,add(z,m))))
+print(sub(x,add(y,add(z,m))))
+print(mul(x,add(y,add(z,m))))
