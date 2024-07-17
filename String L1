@@ -1,0 +1,15 @@
+fname=input("enter first name\n")
+mname=input("enter middle name\n")
+lname=input ("enter last name\n")
+print(" ".join([fname, mname, lname]))
+email=input("enter email id\n")
+if email.endswith(('.com','.org','.edu')):
+     print("valid")
+else:
+      print("invalid")
+name=fname.lower()
+a=name[:4]
+DOB=input("enter DOB in 'DDMMYY' format\n")
+b=DOB[:4]
+password=a+b
+print("password:",password)
