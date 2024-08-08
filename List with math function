@@ -1,0 +1,10 @@
+import math
+l1=[10,20,30,[50,60,[100,200]]]
+a=math.sqrt(l1[-1][-1][0])
+b=math.sqrt(l1[-1][-1][-1])
+print (a,b)
+l1[-1][-1].remove(100)
+l1[-1][-1].remove(200)
+l1[-1][-1].insert(0,a)
+l1[-1][-1].insert(1,b)
+print(l1)
