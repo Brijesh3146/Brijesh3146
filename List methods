@@ -1,0 +1,15 @@
+l1=[10,20,30,[50,60,["python","program"]]]
+print (l1[-1][-1][0],l1[-1][-1][1])
+#append
+l1=[1,2,3,[4,5,"python"]]
+l1[-1].append("program")
+print (l1)
+#sort and reverse 
+l1=["x","y","a","f","h"]
+l1.sort()
+l1.reverse()
+print (l1)
+#insert
+l1=["x","y","a","f","h"]
+l1.insert(2,"w")
+print (l1)
