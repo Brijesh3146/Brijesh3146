@@ -1,0 +1,23 @@
+class Anime:
+    _rating = "Best"
+    def __init__(self, anime, release_year):
+        self._anime = anime
+        self._release_year = release_year
+ 
+    def _show(self):
+        print("Release:", self._release_year)
+ 
+obj = Anime("Naruto", 2002)
+print("Anime:", obj._anime)
+obj._show()
+# Derived class
+class Other_Anime(Anime):
+    def __init__(self, anime, year):
+        Anime.__init__(self, anime, year)
+ 
+    def show_anime(self):
+        print("Anime:", self._anime)
+        self._show()
+ 
+x = Other_Anime("Demon Slayer", 2019)
+x.show_anime()
